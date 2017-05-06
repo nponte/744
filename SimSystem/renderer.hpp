@@ -6,16 +6,11 @@
 
 #include <GL/glew.h>
 
-#include <OpenGL/gl.h>
-#include <GLUT/glut.h>
+#include <GL/gl.h>
+#include <GL/glut.h>
 
-#include <glm/glm.hpp>
-
-#include <OVR_CAPI_0_5_0.h>
-#include <OVR_CAPI_GL.h>
-
-#include <SDL2/SDL.h>
-#include <opencv2/highgui/highgui.hpp>
+//#include <SDL.h>
+//#include <opencv2/highgui/highgui.hpp>
 
 #include "../util/imageutil.hpp"
 
