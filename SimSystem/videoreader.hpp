@@ -9,9 +9,9 @@
 
 #include "/usr/local/Cellar/opencv/2.4.13.2/include/opencv2/highgui/highgui.hpp"
 
-#include "../util/timer.hpp"
-#include "../util/workqueue.h"
-#include "../settings.hpp"
+#include "util/timer.hpp"
+#include "util/workqueue.h"
+#include "settings.hpp"
 
 const int MAX_FRAMES_TO_DROP = 10;
 

@@ -4,7 +4,7 @@
 //#include "buildtest/buildtest.hpp"
 //#include "oculus2/oculus2.hpp"
 //#include "optimizer/optimizer.hpp"
-//#include "renderer/renderer.hpp"
+#include "renderer.hpp"
 //#include "rendertest/rendertest.hpp"
 //#include "util/cylinderwarp.hpp"
 //#include "util/imageutil.hpp"
@@ -27,12 +27,29 @@ static int playVideo(int argc, char* argv[]) {
   return 0;
 }
 
+static int renderStereo(int argc, char* argv[]) {
+  if (argc < 3) {
+    std::cerr << "Usage: "
+      << argv[0]
+      << " render filename"
+      << std::endl;
+    return 1;
+  }
+  std::string filename = argv[2];
+  VideoReader videoReader(filename);
+  cv::Mat image = videoReader.getFrame();
+  glutInit(&argc, argv);
+  Renderer renderer(1024, 640);
+  renderer.displayStereoImage(image);
+  return 0;
+}
+
 int main(int argc, char* argv[]) {
 //  if (argc < 2) {
 //    usage();
 //  }
 
-  playVideo(argc, argv);
+  renderTest(argc, argv);
   /*
   if (runMode == "buildtest") {
     return BuildTest::runBuildTest();
@@ -40,7 +57,7 @@ int main(int argc, char* argv[]) {
     return playVideo(argc, argv);
   } else if (runMode == "cylinderwarp") {
     return cylinderWarp(argc, argv);
-  } else if (runMode == "render") {
+  else if (runMode == "render") {
     return renderStereo(argc, argv);
   } else if (runMode == "rendertest") {
     return renderTest(argc, argv);

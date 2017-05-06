@@ -6,40 +6,20 @@
 
 #include <GL/glew.h>
 
-#ifdef __APPLE__
 #include <OpenGL/gl.h>
 #include <GLUT/glut.h>
-#else
-#include <GL/gl.h>
-#include <GL/glut.h>
-#endif
 
 #include <glm/glm.hpp>
 
 #include <OVR_CAPI_0_5_0.h>
 #include <OVR_CAPI_GL.h>
 
-#ifdef WIN32
-#include <SDL.h>
-#else
 #include <SDL2/SDL.h>
-#endif
 #include <opencv2/highgui/highgui.hpp>
 
 #include "../util/imageutil.hpp"
 
-#ifdef WIN32
-#define OVR_OS_WIN32
-
-#elif defined(__APPLE__)
 #define OVR_OS_MAC
-
-#else
-#define OVR_OS_LINUX
-#include <GL/glx.h>
-#include <X11/Xlib.h>
-
-#endif
 
 class Renderer {
   public:

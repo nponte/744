@@ -1,6 +1,6 @@
 #include "videoreader.hpp"
 
-#include "../optimizer/optimizer.hpp"
+//#include "../optimizer/optimizer.hpp"
 
 #define WINDOW_NAME "video"
 
