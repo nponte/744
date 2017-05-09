@@ -4,7 +4,7 @@
 //#include "buildtest/buildtest.hpp"
 //#include "oculus2/oculus2.hpp"
 //#include "optimizer/optimizer.hpp"
-#include "renderer.hpp"
+//#include "renderer.hpp"
 //#include "rendertest/rendertest.hpp"
 //#include "util/cylinderwarp.hpp"
 //#include "util/imageutil.hpp"
@@ -27,6 +27,7 @@ static int playVideo(int argc, char* argv[]) {
   return 0;
 }
 
+/*
 static int renderStereo(int argc, char* argv[]) {
   if (argc < 3) {
     std::cerr << "Usage: "
@@ -43,13 +44,14 @@ static int renderStereo(int argc, char* argv[]) {
   renderer.displayStereoImage(image);
   return 0;
 }
-
+*/
 int main(int argc, char* argv[]) {
 //  if (argc < 2) {
 //    usage();
 //  }
 
-  renderTest(argc, argv);
+  playVideo(argc, argv);
+  //renderTest(argc, argv);
   /*
   if (runMode == "buildtest") {
     return BuildTest::runBuildTest();

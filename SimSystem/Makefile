@@ -6,7 +6,7 @@ CU_FILES 	:=
 
 CU_DEPS 	:=
 
-CC_FILES 	:= videoreader.cpp main.cpp renderer.cpp
+CC_FILES 	:= videoreader.cpp main.cpp
 
 ############################################
 

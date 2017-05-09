@@ -1,0 +1,10 @@
+frame 0: CPU = 5.7 ms, GPU = 0.0 ms
+frame 1: CPU = 14.9 ms, GPU = 0.0 ms
+frame 2: CPU = 14.6 ms, GPU = 0.0 ms
+frame 3: CPU = 6.0 ms, GPU = 0.0 ms
+frame 4: CPU = 5.9 ms, GPU = 0.0 ms
+frame 5: CPU = 36.1 ms, GPU = 0.0 ms
+frame 6: CPU = 7.1 ms, GPU = 0.0 ms
+frame 7: CPU = 27.0 ms, GPU = 0.0 ms
+frame 8: CPU = 12.7 ms, GPU = 0.0 ms
+frame 9: CPU = 404.2 ms, GPU = 0.0 ms
